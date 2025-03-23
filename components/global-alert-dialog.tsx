@@ -9,7 +9,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog"
-import { useAlertDialog } from "@/context/AlertDialogContext"
+import { useAlertDialog } from "@/context/alert-dialog-context"
 
 export function GlobalAlertDialog() {
   const { isOpen, hideDialog, options } = useAlertDialog()
