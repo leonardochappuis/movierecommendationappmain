@@ -1,7 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import "./globals.css"
-import { Toaster } from "@/components/ui/toaster" // Import Toaster
+import { ToasterProvider } from "@/components/toaster-provider"
 import { GlobalAlertDialog } from "@/components/global-alert-dialog"
 import { AlertDialogProvider } from "@/context/alert-dialog-context"
 
@@ -17,11 +17,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         <AlertDialogProvider>
           {children}
-          <Toaster />
+          <ToasterProvider />
           <GlobalAlertDialog />
         </AlertDialogProvider>
       </body>
     </html>
   )
 }
-
