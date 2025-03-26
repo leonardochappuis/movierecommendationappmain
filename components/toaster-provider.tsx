@@ -1,7 +1,7 @@
 "use client"
 
 import { Toaster } from "sonner"
-import { useIsMobile } from "@/components/ui/use-mobile"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export function ToasterProvider() {
   const isMobile = useIsMobile()
